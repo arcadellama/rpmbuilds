@@ -1,0 +1,10 @@
+# rpmbuilds
+## a carry-over from my Slackware days
+
+Various scripts for managing special builds or packages that either aren't made available in the default repos, or, need to be rebuilt for various reasons. If you found this repo looking for properly built RPMs with the 'rpmbuild' application, kindly keep moving along. This is a hacky way of repurposing my old Slackware scripts for EL/Fedora distros -- some habits die hard.
+
+In some cases it simply points to an out-of-repo RPM with an update script to stay on top of what has been manually added. In others it is a proper build from source. In all cases I do not host the source code directly in the repo.
+
+Use at your own risk! Check the source and never blindly install. There is no warranties or guarantees, implied or otherwise.
+
+tl;dr YMMV
