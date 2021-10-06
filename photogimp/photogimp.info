@@ -1,0 +1,8 @@
+#!/bin/bash
+
+prgnam="PhotoGIMP"
+local_version="2020"
+latest_tag="$(curl -s https://api.github.com/repos/Diolinux/PhotoGIMP/releases/latest | grep -Po '"tag_name": "\K.*?(?=")' | sed -e 's/v//1')"
+latest_version="$(curl -s https://api.github.com/repos/Diolinux/PhotoGIMP/releases | grep -oP -m1 '"name": "PhotoGIMP \K[^"]+(?=")')"
+latest_release="$prgnam.by.Diolinux.v$latest_version.for.Flatpak.zip"
+latest_release_url="https://github.com/Diolinux/PhotoGIMP/releases/download/$latest_tag/$latest_release"
